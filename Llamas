@@ -1,0 +1,17 @@
+/* Karol Mata
+Programa llamas */
+#include <stdio.h>
+int main(){
+	int anios, tam_inicial, tam_final, tam_actual, nacen, mueren;
+	scanf("%d %d", &tam_inicial, &tam_final);
+	anios=0;
+	tam_actual=tam_inicial;
+	while(tam_actual<tam_final){
+		nacen=tam_actual/3;
+		mueren=tam_actual/4;
+		tam_actual=tam_actual+nacen-mueren;
+		anios=anios+1;
+	}
+	printf("%d", anios);
+	return 0;
+}
