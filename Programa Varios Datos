@@ -1,0 +1,15 @@
+/* Karol Mata
+Programa Varios Datos*/
+#include <stdio.h>
+int main(){
+	int N, n_parejas, suma, num_1, num_2;
+	scanf("%d\n", &N);
+	n_parejas=1;
+	while(N>=n_parejas){
+		scanf("%d %d", &num_1, &num_2);
+		suma=num_1+num_2;
+		n_parejas=n_parejas+1;
+		printf("	%d", suma);
+	}
+	return 0;
+}
